@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+
+:root{
+    --cor-primaria: rgb(229, 165, 39);
+    --cor-secundaria: #345678;
+    --botao:  rgb(250, 170, 11);
+    --nome-do-lanche:  rgb(209, 118, 92);
+}
+/* PARA TODOS O HEADER */
+header{
+    background-color: rgb(229, 165, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.logo-h1{
+    display: flex;
+    align-items: center;
+}
+
+.h1{
+    color: white;
+}
+
+.logo-header{
+    width: 100px;
+    border-radius: 40px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+.logo-h1 a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+header nav ul li a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header nav ul li a:hover{
+    color: #ccc;
+}
+
+@media (max-width: 720px) {
+    header{
+        text-align: center;
+        justify-content: center;
+        display: block;
+        padding: 20px;
+    }
+
+    .logo-h1{
+        text-align: center;
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:368px) {
+    header nav ul li a{
+        font-size: 16px;
+    }
+}
+
+
+/* CARROSEL */
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* ESCOLHER O TIPO DE LANCHE */
+.escolha{
+    margin: 30px auto;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.escolha div{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.escolha div img{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 60%;
+}
+
+.escolha p{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.escolha div a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--botao);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.escolha div a:hover{
+    color: white;
+    background-color: red;
+}
+
+/* MENU DE OPCOES DOS LANCHES */
+.opcoes{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.opcoes a{
+    text-decoration: none;
+    color: red;
+    margin: auto 20px;
+    font-size: 23px;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+.opcoes a:hover{
+    border-bottom: 2px solid var(--cor-primaria);
+}
+
+.lanches{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+.hamburger{
+    box-shadow: 0 0 10px;
+    width: 48%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid  white;
+    margin:  20px 0;
+ }
+
+.hamburger p{
+    background-color: white;
+    padding: 20px;
+    color:  var(--nome-do-lanche);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hamburger  a img{
+    width: 100%;
+    padding: 10px;
+    height: 500px;
+    margin: 10px;
+}
+
+h1 , h2{
+    margin-left: 30px;
+    font-weight: bold;
+    width: 95%;
+    margin: 30px auto;
+    color: brown;
+}
+
+
+/* LANCHES */
+
+.tipos-de-comida article{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+
+.hamburger a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* BOTAO DE VOLTAR AO TOPO */
+  .voltar{
+    position: fixed;
+    background-color: var(--botao);
+    bottom: 0px;
+    width: 150px;
+    color: yellow;
+    border-radius: 0px 10px 0 0;
+    text-align: center;
+    padding: auto 20px;
+    z-index: 3;
+    padding: 10px;
+    padding-top: 20px;
+    text-decoration: none;
+  }
+  .voltar p{
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  .seta img{
+    height: 35px;
+    position: fixed;
+    bottom: 68px;
+    z-index: 100;
+    left: 55px;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+/* PRODUTO */
+
+
+
+.tudo{
+    margin: 20px;
+}
+
+
+.tudo-produto{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.tudo-produto img{
+    width: 300px;
+    padding: 10px;
+}
+
+.produto-voltar{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    color: brown;
+}
+
+.produto{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+
+.produto h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.produto p{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: rgb(229, 165, 39);
+    color: white;
+}
+footer img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+.menu-do-footer div a{
+    text-decoration: none;
+    color: white;
+   
+    margin-left: 15px;
+}
+
+.menu-do-footer div a:hover{
+    border-bottom: 2px solid white;
+}
+
+.footer-cima{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.borda-do-footer{
+    background-color: white;
+    padding: 1px;
+    margin: 20px;
+}
+
+.footer-icones{
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+}
+
+footer p:nth-child(4){
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 720px){
+    .lanches div{
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        margin:  20px 0;
+    }
+    
+}
+
+/* CARDAPIO */
+
+/* PRODUTO */
+
+@media (max-width: 910px){
+    .tudo-produto{
+        display: block;
+    }
+
+    
+
+    .produto div p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    header nav ul li a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 720px) {
+    header{
+        text-align: center;
+        justify-content: center;
+        display: block;
+        padding: 20px;
+    }
+
+    .logo-h1{
+        text-align: center;
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:368px) {
+    header nav ul li a{
+        font-size: 16px;
+    }
+}

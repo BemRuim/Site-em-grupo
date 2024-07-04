@@ -1,0 +1,130 @@
+HTMT
+<header>
+        <img src="imagens/Logo.png" alt="Logo Lightning Burgers">
+        <nav>
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="cardapio">Cárdapio</a></li>
+                <li><a href="pedidos">Pedidos</a></li>
+                <li><a href="sobre-nos">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+CSS
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(229, 165, 39);
+}
+header img{
+    width: 100px;
+    box-shadow: 0 0 10px white;
+    border-radius: 40px;
+    border: 2px solid white;
+}
+header nav ul{
+    margin: 40px 60px 0 0;
+    display: inline-flex;
+}
+header nav ul li{
+    list-style-type: none;
+}
+header nav ul li a{
+    margin-right: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    border-radius: 20px;
+    color: rgb(229, 165, 39);
+    background-color: white;
+}
+
+	------------//--------------
+
+HTML
+<footer>
+        <img src="img/Logo.png" alt="">
+        <nav class="menu-do-footer">
+            <div class="footer-cima">
+                <a href="#">App Burges</a>
+                <a href="#">Sobre o Burges</a>
+                <a href="#">Trabalhe conosco</a>
+                <a href="#">Seja um franqueado</a>
+                <a href="#">Relaçoes com investidores</a>
+            </div>
+            
+            <div class="footer-baixo">
+                <a href="">Diretrizes de Privacidade de Dados</a>
+                <a href="">Regulamento do Clube Burges</a>
+                <a href="">Politica de Publicidade Infantil</a>
+                <a href="">Informações Legais</a>
+                <a href="">Opções de privacidade</a>
+            </div>
+        </nav>
+        <div class="borda-do-footer"></div>
+
+        <p>Compartilhes algo gostoso</p>
+        <div class="footer-icones">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+        </div>
+       <p>
+        Imagens meramente ilustrativas. Consulte os restaurantes participantes. TM & © 2021 Burger King Corporation. Todos os direitos reservados.
+       </p>
+    </footer>
+	---------//---------
+CSS
+footer{
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(229, 165, 39);
+    color: white;
+}
+footer img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+.menu-do-footer div a{
+    text-decoration: none;
+    color: white;
+   
+    margin-left: 15px;
+}
+
+.menu-do-footer div a:hover{
+    border-bottom: 2px solid white;
+}
+
+.footer-cima{
+    font-size: 20px;
+    margin-bottom: 20px;
+     font-weight: bold;
+}
+
+.borda-do-footer{
+    background-color: white;
+    padding: 1px;
+    margin: 20px;
+}
+
+.footer-icones{
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+}
+
+footer p:nth-child(4){
+    font-size: 25px;
+    font-weight: bold;
+}

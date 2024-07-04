@@ -1,0 +1,11 @@
+No site, haverá um header fixo para cada item do navbar, e o header e footer serão os mesmos para cada item do navbar. 
+O header terá 4 itens no navbar: o primeiro sobre o início do site que mostrará o cardápio, e o quarto sobre a empresa 
+que mostra a empresa e contará a história da empresa. Além disso, depois do header haverá também um carrossel e isso 
+acontecerá em cada item do navbar. Após o header, não esqueça de comentar todo o código HTML e CSS.
+
+na parte de cardapio tivemos a ideia de colocar noticias no item inicio e pegar, 
+brinquedos milk shake, e colocar lá na parte de cardapio, que vai ficar no comeso da pagina 
+e quando clicar vai direcionar para parte relacionada do site
+
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

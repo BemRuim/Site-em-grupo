@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighninn's</title>
+    <link rel="icon" href="img/Logo (3).png">
+    <!--Link do css-->
+    <link rel="stylesheet" href="css/pedidos.css">
+    <!--Link do css-->
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo-h1">
+            <a href="index.html"><img src="img/Logo (3).png" alt="logo" class="logo-header"></a>
+            <a href="index.html"><h1>Lighninn's</h1></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cardapio.html">Cardapio</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="sobre-nos.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Header-->
+    <!--Main-->
+    <main>
+        <div class="tudo">
+            <h2>Faça seu pedido</h2>
+            <div class="flex">
+                <form action="#" method="post" class="formulario">
+                    <h3>Escolha seus items</h3>
+                    <ul>
+                        <li>
+                            <div class="list">
+                                <label for="opcoes1">Hanburguer:</label> <br>
+                                <select name="burguer" id="opcoes1">
+                                    <option value=""></option>
+                                    <option value="x-burguer">X-Burguer</option>
+                                    <option value="x-salada">X-Salada</option>
+                                    <option value="x-bacon">X-Bacon</option>
+                                    <option value="x-egg">X-egg</option>
+                                    <option value="x-tudo">X-tudo</option>
+                                    <option value="x-ratao">X-Ratão</option>
+                                    <option value="x-queijao">X-Queijão</option>
+                                </select>
+                            </div>
+                        </li>
+        
+                        <li>
+                            <div class="list">
+                                <label for="opcoes2">Acompanhamentos:</label> <br>
+                                <select name="burguer" id="opcoes2">
+                                    <option value=""></option>
+                                    <option value="bp">Batata P</option>
+                                    <option value="bm">Batata M</option>
+                                    <option value="bg">Batata G</option>
+                                    <option value="bc">Batata com cheadder</option>
+                                    <option value="n5">Nugget 5</option>
+                                    <option value="n10">Nugget 10</option>
+                                    <option value="n15">Nugget de 15</option>
+                                </select>
+                            </div>
+                        </li>
+        
+                        <li>
+                            <div class="list">
+                                <label for="opcoes3">Acompanhamentos:</label> <br>
+                                <select name="burguer" id="opcoes3">
+                                    <option value=""></option>
+                                    <option value="bp">Batata P</option>
+                                    <option value="bm">Batata M</option>
+                                    <option value="bg">Batata G</option>
+                                    <option value="bc">Batata com cheadder</option>
+                                    <option value="n5">Nugget 5</option>
+                                    <option value="n10">Nugget 10</option>
+                                    <option value="n15">Nugget de 15</option>
+                                </select>
+                            </div>
+                        </li>
+        
+                        <li>
+                            <div class="list">
+                                <label for="opcoes4">Bebidas:</label> <br>
+                                <select name="burguer" id="opcoes4">
+                                    <option value=""></option>
+                                    <option value="x-burguer">Pepis</option>
+                                    <option value="x-salada">Coca</option>
+                                    <option value="x-bacon">Guarana</option>
+                                    <option value="x-egg">Fanta Laranja</option>
+                                    <option value="x-tudo">Coca zero</option>
+                                    <option value="x-ratao">Guarana zero</option>
+                                    <option value="x-queijao">Pepis zero</option>
+                                </select>
+                            </div>
+                        </li>
+        
+                        <li>
+                            <div class="list">
+                                <label for="opcoes5">Sobremesas:</label> <br>
+                                <select name="burguer" id="opcoes5">
+                                    <option value=""></option>
+                                    <option value="x-burguer">Torta de maçã</option>
+                                    <option value="x-salada">Torta de banana</option>
+                                    <option value="x-bacon">Sorvete de chocolate</option>
+                                    <option value="x-egg">Sorvete de morango</option>
+                                    <option value="x-tudo">Sorvete de creme</option>
+                                    <option value="x-ratao">Sorvete napolitano</option>
+                                    <option value="x-queijao">Milkshak</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="pagamento.html" class="botao-form">Finalizar</a>
+                </form>
+                <div class="delivery">
+                    <h3>Peça para comer <br> em casa</h3>
+                    <form action="#" method="post" class="formulario-livre" id="formulario-livre-id">
+                        <label for="Nome">Nome:</label> <br>
+                        <input type="text" id="Nome" name="Nome"> <br>
+
+                        <label for="local">Nome da rua:</label> <br>
+                        <input type="text" id="local" name="local"> <br>
+
+                        <label for="#">Tipo de moradia:</label> <br>
+                        <select name="casa" id="select">
+                            <option value=""></option>
+                            <option value="casa">Casa</option>
+                            <option value="predio">Predio</option>
+                        </select>
+                        <div class="invisivel" id="residencia">
+                            <label for="numero">Número do apartamento:</label> <br>
+                            <input type="tel" id="numero">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--Main-->
+    <!--Footer-->
+    <footer>
+        <img src="img/Logo (3).png" alt="">
+        <nav class="menu-do-footer">
+            <div class="footer-cima">
+                <a href="#">App Burges</a>
+                <a href="#">Sobre o Burges</a>
+                <a href="#">Trabalhe conosco</a>
+                <a href="#">Seja um franqueado</a>
+                <a href="#">Relaçoes com investidores</a>
+            </div>
+            
+            <div class="footer-baixo">
+                <a href="">Diretrizes de Privacidade de Dados</a>
+                <a href="">Regulamento do Clube Burges</a>
+                <a href="">Politica de Publicidade Infantil</a>
+                <a href="">Informações Legais</a>
+                <a href="">Opções de privacidade</a>
+            </div>
+        </nav>
+        <div class="borda-do-footer"></div>
+
+        <p>Compartilhes algo gostoso</p>
+        <div class="footer-icones">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+        </div>
+       <p>
+        Imagens meramente ilustrativas. Consulte os restaurantes participantes. TM & © 2021 Burger King Corporation. Todos os direitos reservados.
+       </p>
+    </footer>
+    <!--Footer-->
+    <!--Link do java-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/pedidos.js"></script>
+    <!--Link do java-->
+</body>
+</html>

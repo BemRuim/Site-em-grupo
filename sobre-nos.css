@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS header */
+
+header{
+    background-color: rgb(229, 165, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.logo-h1{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header{
+    width: 100px;
+    border-radius: 40px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+.logo-h1 a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+header nav ul li a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header nav ul li a:hover{
+    color: #ccc;
+}
+
+/* CSS div sobre-nos */
+
+.sobre-nos{
+    margin: 50px 20px;
+    padding: 60px;
+    border-radius: 50px;
+    box-shadow: 0 0 30px rgb(229, 165, 39);
+    border: 2px solid rgb(229, 165, 39);
+}
+.sobre-nos h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.sobre-nos p{
+    margin-top: 20px;
+    text-align: justify;
+}
+.div-video{
+    margin-top: 50px;
+    text-align: center;
+}
+.div-video video{
+    border-radius: 30px;
+    height: 360px;
+}
+
+/* CSS footer */
+
+footer{
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(229, 165, 39);
+    color: white;
+}
+footer img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+.menu-do-footer div a{
+    text-decoration: none;
+    color: white;
+   
+    margin-left: 15px;
+}
+
+.menu-do-footer div a:hover{
+    border-bottom: 2px solid white;
+}
+
+.footer-cima{
+    font-size: 20px;
+    margin-bottom: 20px;
+     font-weight: bold;
+}
+
+.borda-do-footer{
+    background-color: white;
+    padding: 1px;
+    margin: 20px;
+}
+
+.footer-icones{
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+}
+
+footer p:nth-child(4){
+    font-size: 25px;
+    font-weight: bold;
+}
+.a .p img{
+    height: 200px;
+}
+
+/* CSS responsivel */
+
+@media (max-width: 1280px) {
+    header nav ul li a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 720px) {
+    header{
+        text-align: center;
+        justify-content: center;
+        display: block;
+        padding: 20px;
+    }
+
+    .logo-h1{
+        text-align: center;
+        justify-content: center;
+    }
+
+    header nav ul li a{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:368px) {
+    header nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 774px){
+    .div-video video{
+       height: auto;
+       width: 100%;
+    }
+    .p img{
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px){
+    .p img{
+        height: 200px;
+    }
+}

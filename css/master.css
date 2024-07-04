@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+/*Header*/
+header{
+    background-color: rgb(229, 165, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-h1{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header{
+    width: 100px;
+    border-radius: 45px;
+    border: 2px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+.logo-h1 a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul li{
+    list-style: none;
+    display: inline;
+}
+
+header nav ul li a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: rgb(134, 0, 0);
+    border: 2px solid rgb(100, 0, 0);
+}
+
+header nav ul li a:hover{
+    color: white;
+    background-color: rgb(160, 0, 0);
+    border: 2px solid rgb(119, 0, 0);
+}
+
+/*Separação*/
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mastercard{
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 100px auto;
+    padding: 10px;
+    
+}
+
+.pagamento{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pagamento h2{
+    color: rgb(229, 165, 39);
+    font-size: 40px;
+}
+
+.pagamento p{
+    font-size: 30px;
+    color: grey;
+}
+
+#cep, #cpf, #name{
+    width:400px;
+}
+
+form label{
+    font-size: 20px;
+}
+
+form input{
+    background-color:  rgb(229, 165, 39);
+    border: 2px solid  rgb(235, 166, 28);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 30px;
+}
+
+form input:focus{
+    background-color:  rgb(229, 165, 39);
+    outline: 2px solid rgb(243, 195, 98);
+    border-radius: 8px;
+    color: white;
+}
+
+.nc{
+    margin-right: 10px;
+}
+
+.botao{
+    background-color:  rgb(229, 165, 39);
+    border: 2px solid  rgb(235, 166, 28);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.botao:hover{
+    background-color: rgb(160, 0, 0);
+    border: 2px solid rgb(119, 0, 0);
+}
+
+.botao a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Separação*/
+footer{
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(229, 165, 39);
+    color: white;
+}
+footer img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+
+.menu-do-footer div a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+.menu-do-footer div a:hover{
+    border-bottom: 2px solid white;
+}
+
+.footer-cima{
+    font-size: 20px;
+    margin-bottom: 20px;
+     font-weight: bold;
+}
+
+.borda-do-footer{
+    background-color: white;
+    padding: 1px;
+    margin: 20px;
+}
+
+.footer-icones{
+    font-size: 40px;
+    margin: 10px;
+    color: white;
+}
+
+footer p:nth-child(4){
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*pix*/
+#texto{
+    background-color:rgb(229, 165, 39) ;
+    border: 2px solid rgb(247, 167, 9);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    background-color: rgb(160, 0, 0);
+    border: 2px solid rgb(119, 0, 0);
+    border-radius: 8px;
+}
+
+.container a:hover{
+    background-color: rgb(119, 0, 0);
+    border: 2px solid rgb(77, 0, 0);
+}
+
+#botao{
+    background-color:rgb(229, 165, 39) ;
+    border: 2px solid rgb(247, 167, 9);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+    .pagamento h2{
+        font-size: 50px;
+    }
+    .pagamento p{
+        font-size: 40px;
+    }
+    .mastercard{
+        margin:130px 190px 130px 190px;
+        padding: 20px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .mastercard{
+        margin: 130px 160px 130px 160px;
+    }
+}
+
+@media (max-width: 720px) {
+    .mastercard{
+        margin: 10px;
+    }
+    #cep, #cpf, #name{
+        width:350px;
+    }
+    label{
+        font-size: 16px;
+    }
+    main input{
+        width: 165px;
+    }
+}
